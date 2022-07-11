@@ -6,24 +6,20 @@
 /*   By: mtrautne <mtrautne@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/26 13:05:33 by mtrautne          #+#    #+#             */
-/*   Updated: 2022/05/04 08:58:27 by mtrautne         ###   ########.fr       */
+/*   Updated: 2022/07/07 10:32:37 by mtrautne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*Function description: 
+checks whether c is a 7-bit unsigned char value that fits into the ASCII 
+character set.
+
+Return value:
+0 if the character tests false and 1 if the character tests true.*/
+
 int	ft_isascii(int c)
 {
-	if (c < 0 || c > 177)
+	if (c < 0 || c > 127)
 		return (0);
 	return (1);
-}
-
-#include <ctype.h>
-#include <stdio.h>
-
-int	main(void)
-{
-	int	c;
-
-	c = 180;
-	printf("my: %i\nOG: %i\n", ft_isascii(c), isascii(c));
 }

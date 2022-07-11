@@ -6,24 +6,19 @@
 /*   By: mtrautne <mtrautne@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/26 12:20:35 by mtrautne          #+#    #+#             */
-/*   Updated: 2022/05/04 08:58:30 by mtrautne         ###   ########.fr       */
+/*   Updated: 2022/07/07 10:32:42 by mtrautne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*Function description:
+checks if c is a digit (0 through 9).
+
+Return value:
+0 if the character tests false and 1 if the character tests true.*/
 
 int	ft_isdigit(int c)
 {
 	if (c < '0' || c > '9')
 		return (0);
 	return (1);
-}
-
-#include <ctype.h>
-#include <stdio.h>
-
-int	main(void)
-{
-	int	c;
-
-	c = '1';
-	printf("my: %i\nOG: %i\n", ft_isdigit(c), isdigit(c));
 }

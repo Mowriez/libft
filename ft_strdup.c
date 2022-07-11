@@ -1,44 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mtrautne <mtrautne@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/26 14:23:06 by mtrautne          #+#    #+#             */
-/*   Updated: 2022/07/07 10:54:15 by mtrautne         ###   ########.fr       */
+/*   Created: 2022/06/06 13:17:09 by mtrautne          #+#    #+#             */
+/*   Updated: 2022/07/07 10:45:41 by mtrautne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*Function description:
-computes the length of the string s.
+allocates sufficient memory for a copy of the string s1, does the copy, and 
+returns a pointer to it. The pointer may subsequently be used as an argument 
+to the function free(3).
 
 Return value:
-returns the number of characters that precede the terminating NUL character.
-
-Particularities:
-Be careful while running counting variable through string up to strlen, as
-counting variables sometimes start at one or zero.*/
+returns pointer to allocated memory. If insufficient memory is available, NULL 
+is returned and errno is set to ENOMEM.*/
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+char	*ft_strdup(const char *s1)
 {
 	size_t	i;
+	char	*j;
 
 	i = 0;
-	while (s[i] != '\0')
+	j = malloc((ft_strlen(s1) + 1) * sizeof(char));
+	while (i < ft_strlen(s1))
+	{
+		j[i] = s1[i];
 		i++;
-	return (i);
+	}
+	j[i] = '\0';
+	return (j);
 }
-
-// #include <stdio.h>
-// #include <string.h>
-
-// int	main(void)
-// {
-// 	const char	*s;
-
-// 	s = "test";
-// 	printf("Me: %zu\nOG: %zu\n", ft_strlen(s), strlen(s));
-// }

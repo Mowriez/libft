@@ -1,27 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mtrautne <mtrautne@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/26 14:12:33 by mtrautne          #+#    #+#             */
-/*   Updated: 2022/07/07 10:32:25 by mtrautne         ###   ########.fr       */
+/*   Created: 2022/06/08 08:09:20 by mtrautne          #+#    #+#             */
+/*   Updated: 2022/07/07 11:02:04 by mtrautne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*Function description:
-tests for any character for which isupper() or islower() is true.
-parameter c is an int, the value of which must be representable as an unsigned 
-char or the macro EOF. This means chars will implicitely converted to their 
-ascii values.
+Outputs the string ’s’ to the given file descriptor.
 
 Return value:
-0 if character c tests false and 1 if c tests true.*/
+None
 
-int	ft_isalpha(int c)
+Parameters:
+s: The string to output.
+fd: The file descriptor on which to write.
+
+External functions:
+write
+
+Particularities:
+No Null-Terminator required, as not generating a string, just writing it to 
+file/standard output.*/
+
+#include "libft.h"
+
+void	ft_putstr_fd(char *s, int fd)
 {
-	if (c < 'A' || (c > 'Z' && c < 'a') || c > 'z')
-		return (0);
-	return (1);
+	int	i;
+
+	i = 0;
+	while (s[i])
+	{
+		ft_putchar_fd(s[i++], fd);
+	}
 }
