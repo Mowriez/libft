@@ -6,7 +6,7 @@
 /*   By: mtrautne <mtrautne@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/08 08:09:20 by mtrautne          #+#    #+#             */
-/*   Updated: 2022/07/07 10:50:51 by mtrautne         ###   ########.fr       */
+/*   Updated: 2022/07/19 10:18:12 by mtrautne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,12 +56,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	j[i] = '\0';
 	return (j);
 }
-
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	char	s1[] = "lorem ipsum";
-// 	char	s2[] = "dolor sit amet";
-// 	printf("%s\n", ft_strjoin(s1, s2));
-// }

@@ -6,7 +6,7 @@
 /*   By: mtrautne <mtrautne@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/08 08:09:20 by mtrautne          #+#    #+#             */
-/*   Updated: 2022/07/07 10:37:24 by mtrautne         ###   ########.fr       */
+/*   Updated: 2022/07/19 10:28:33 by mtrautne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,8 +107,3 @@ char	**ft_split(char const *s, char c)
 	ret[j] = 0;
 	return (ret);
 }
-
-// int	main(void)
-// {
-// 	ft_split("lorem ipsum dolor sit amet,", ' ');
-// }

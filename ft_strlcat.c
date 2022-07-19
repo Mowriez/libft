@@ -6,7 +6,7 @@
 /*   By: mtrautne <mtrautne@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 10:52:02 by mtrautne          #+#    #+#             */
-/*   Updated: 2022/07/07 10:53:17 by mtrautne         ###   ########.fr       */
+/*   Updated: 2022/07/19 10:15:58 by mtrautne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,22 +61,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		dst[i] = '\0';
 	return (len_src + len_dst);
 }
-
-// #include <stdio.h>
-// #include <string.h>  
-// #include <bsd/string.h>
-
-// int	main(void)
-// {
-// 	char dst[7] = {'\0', 'e', 's', 't'};
-// 	const char	*src = "ad";
-// 	size_t dstsize = 7;
-
-// 	printf("OG: %ld\n", strlcat(dst, src, dstsize));
-
-// 	char dest[7] = {'\0', 'e', 's', 't'};
-// 	const char	*sorc = "ad";
-// 	size_t destsize = 7;
-
-// 	printf("MY: %ld\n", ft_strlcat(dest, sorc, destsize));
-// }

@@ -6,7 +6,7 @@
 /*   By: mtrautne <mtrautne@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/02 10:59:42 by mtrautne          #+#    #+#             */
-/*   Updated: 2022/07/07 10:38:18 by mtrautne         ###   ########.fr       */
+/*   Updated: 2022/07/19 10:18:20 by mtrautne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,13 +39,3 @@ char	*ft_strchr(const char *s, int c)
 		return (0);
 	return ((char *)s + i);
 }
-
-// #include <stdio.h>
-// #include <string.h>
-
-// int main (void)
-// {
-// 	const char	s[] = {'t', 'b', 'c', '\0', 'e', 'f', 'g', 'h'};
-
-// 	printf("OG %p\nMY %p\n", strchr(s, 't' + 512), ft_strchr(s, 't' + 512));
-// }

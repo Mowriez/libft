@@ -6,7 +6,7 @@
 /*   By: mtrautne <mtrautne@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 13:17:09 by mtrautne          #+#    #+#             */
-/*   Updated: 2022/07/07 10:55:05 by mtrautne         ###   ########.fr       */
+/*   Updated: 2022/07/19 10:13:52 by mtrautne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,15 +44,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
-
-// #include <stdio.h>
-// #include <string.h>
-
-// int main(void)
-// {
-// 	const char*	i = "test\200";
-// 	const char*	j = "test\0";
-// 	size_t	k	= 6;
-
-// 	printf("OG: %d\nMY: %d\n", strncmp(i, j, k), ft_strncmp(i, j, k));
-// }

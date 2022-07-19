@@ -6,7 +6,7 @@
 /*   By: mtrautne <mtrautne@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/02 10:31:14 by mtrautne          #+#    #+#             */
-/*   Updated: 2022/06/08 20:08:39 by mtrautne         ###   ########.fr       */
+/*   Updated: 2022/07/19 10:13:22 by mtrautne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,14 +23,3 @@ int	ft_toupper(int c)
 		c = c - 32;
 	return (c);
 }
-
-// #include <ctype.h>
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	int	c;
-
-// 	c = 'a';
-// 	printf("OG %d\nMY %d\n", toupper(c), ft_toupper(c));
-// }

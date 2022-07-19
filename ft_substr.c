@@ -6,7 +6,7 @@
 /*   By: mtrautne <mtrautne@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/08 08:07:54 by mtrautne          #+#    #+#             */
-/*   Updated: 2022/06/09 15:34:28 by mtrautne         ###   ########.fr       */
+/*   Updated: 2022/07/19 10:13:33 by mtrautne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,10 +59,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	j[i] = '\0';
 	return (j);
 }
-
-// #include <stdio.h>
-// int main(void)
-// {
-// 	printf("%s\n", ft_substr("tripouille", 1, 1));
-// 	// printf("%lu, %lu", sizeof(char), sizeof(char *));
-// }

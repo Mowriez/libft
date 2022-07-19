@@ -6,7 +6,7 @@
 #    By: mtrautne <mtrautne@student.42wolfsburg.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/27 22:16:23 by mtrautne          #+#    #+#              #
-#    Updated: 2022/07/06 10:30:04 by mtrautne         ###   ########.fr        #
+#    Updated: 2022/07/19 10:09:53 by mtrautne         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -70,16 +70,12 @@ the object files.
 
 #by convention clean just removes executables.
 clean:	
-	@rm -f $(NAME)
+	@rm -f $(OBJA)
 
 #by convention fclean removes executables and object files, leaves just \
 source files.
 fclean: clean
-	@rm -f $(OBJA)
-
-#my function to just remove object files and keep executable 
-oclean: 
-	@rm -f $(OBJA)
+	@rm -f $(NAME)
 
 #by convention re is used to fclean and remake the binary/executable.
 re: fclean all

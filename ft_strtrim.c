@@ -6,7 +6,7 @@
 /*   By: mtrautne <mtrautne@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/08 08:09:20 by mtrautne          #+#    #+#             */
-/*   Updated: 2022/07/06 12:40:22 by mtrautne         ###   ########.fr       */
+/*   Updated: 2022/07/19 10:13:40 by mtrautne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,12 +68,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	str[k] = '\0';
 	return (str);
 }
-
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	char	*s1 = "aaaaaaaaaa";
-
-// 	printf("%s\n", ft_strtrim(s1, "a"));
-// }

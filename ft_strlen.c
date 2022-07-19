@@ -6,7 +6,7 @@
 /*   By: mtrautne <mtrautne@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/26 14:23:06 by mtrautne          #+#    #+#             */
-/*   Updated: 2022/07/07 10:54:15 by mtrautne         ###   ########.fr       */
+/*   Updated: 2022/07/19 10:13:58 by mtrautne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,14 +31,3 @@ size_t	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
-
-// #include <stdio.h>
-// #include <string.h>
-
-// int	main(void)
-// {
-// 	const char	*s;
-
-// 	s = "test";
-// 	printf("Me: %zu\nOG: %zu\n", ft_strlen(s), strlen(s));
-// }
